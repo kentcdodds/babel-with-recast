@@ -5,15 +5,13 @@ transforming the AST.
 
 First install the dependencies (`yarn.lock` available).
 
-Then run `node .` (or `yarn start`).
+Then run `node .`
 
 And you'll get output like this:
 
 ```
 ~/Desktop/babel-with-recast (master)
-👻  $ yarn start
-yarn start v0.15.1
-$ node . 
+👻  $ node .
 /Users/kdodds/Desktop/babel-with-recast/node_modules/babel-core/lib/transformation/file/index.js:605
       throw err;
       ^
@@ -29,8 +27,6 @@ Error: unknown: {type: StringLiteral, start: undefined, end: undefined, loc: und
     at printWithComments (/Users/kdodds/Desktop/babel-with-recast/node_modules/recast/lib/printer.js:61:16)
     at FastPath.map (/Users/kdodds/Desktop/babel-with-recast/node_modules/recast/lib/fast-path.js:167:25)
     at printArgumentsList (/Users/kdodds/Desktop/babel-with-recast/node_modules/recast/lib/printer.js:1689:24)
-error Command failed with exit code 1.
-info Visit http://yarnpkg.com/en/docs/cli/start for documentation about this command.
 ```
 
 I'm not sure what's going on here. Help appreciated :)

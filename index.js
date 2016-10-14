@@ -11,11 +11,27 @@ const options = {
 }
 
 const code = `
-export {foo}
+export {foo} // this should not add space or semicolons
 
-function foo() {
-  console.log('hi')
+function foo    ()    { // this should not remove spaces
+    console.log(   'hi'   ) // this should not remove spaces or add a semicolons
+
+
+
+
+  
+  
+  
+// these spaces should not be removed
+
+  
+  
+  
+  
+  
 }
+
+
 `
 
 const result = babel.transform(code, options)
